@@ -9,7 +9,7 @@ const SectionalMetadataSchema = new Schema({
     ref: "structbook",
   },
   migrateId: {
-    type: String, /// This id will be using fr migration from the mongo database
+    type: Number, /// This id will be using fr migration from the mongo database
     unique: true,
   },
   book_id: {
@@ -62,7 +62,7 @@ const SectionalMetadataSchema = new Schema({
     trim: true,
   },
   question_number: {
-    type: Number, // The Question Number of the PART1 Question & Answers
+    type: String, // The Question Number of the PART1 Question & Answers
   },
   questioner_name: {
     type: Schema.Types.ObjectId, // Refer to the member participants model
@@ -75,6 +75,9 @@ const SectionalMetadataSchema = new Schema({
   minister_portfolio: {
     type: Schema.Types.ObjectId, // Refer to the Ministers Portofolio
     ref: "ministryportfolio",
+  },
+  annexure_migrate_id: {
+    type: Number,
   },
   annexure: [
     {
@@ -109,6 +112,7 @@ const SectionalMetadataSchema = new Schema({
 });
 
 module.exports = StructureBook = mongoose.model(
+  //  "sectionalbook",
   "sectionalbook",
   SectionalMetadataSchema
 );

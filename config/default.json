@@ -3,6 +3,6 @@
   "bookSectionMetadataKLC": "/home/vaibhav/Documents/VidhanDocsTracker/populateDB/excelData/KLC",
   "bookMetadataKLA": "/home/vaibhav/Documents/VidhanDocsTracker/populateDB/excelMetadata/KLA",
   "bookMetadataKLC": "/home/vaibhav/Documents/VidhanDocsTracker/populateDB/excelMetadata/KLC",
-  "localMongoURI_KLA_OPS": "mongodb://127.0.0.1:27017/kla_ops_prod",
+  "localMongoURI_KLA_OPS": "mongodb://127.0.0.1:27017/kla_ops_prod_new",
   "localMongoURI_KLC_OPS": "mongodb://127.0.0.1:27017/klc_ops_prod"
 }

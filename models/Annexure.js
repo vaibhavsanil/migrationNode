@@ -9,7 +9,7 @@ const AnnexureSchema = new Schema({
     ref: "structbook",
   },
   migrateId: {
-    type: String, /// This id will be using fr migration from the mongo database
+    type: Number, /// This id will be using fr migration from the mongo database
     unique: true,
   },
   book_id_num: {

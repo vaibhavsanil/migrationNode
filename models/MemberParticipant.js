@@ -7,10 +7,12 @@ const MemberParticipantSchema = new Schema({
   name_eng: {
     type: String, // Debate Title in English
     required: true,
+    trim: true,
   },
   name_kan: {
     type: String, // Debate Title in Kannada
     required: true,
+    trim: true,
   },
   member_debate_participant: [
     {
